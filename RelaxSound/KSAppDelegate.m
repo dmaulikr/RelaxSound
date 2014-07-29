@@ -7,6 +7,8 @@
 //
 
 #import "KSAppDelegate.h"
+#import "KSMainViewController.h"
+#import "KSMainToolViewController.h"
 
 @implementation KSAppDelegate
 
@@ -14,6 +16,20 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    NSMutableArray *arr = [NSMutableArray array];
+    
+    UITabBarController *tabBar = [[UITabBarController alloc]init];
+    
+    KSMainViewController *mainCtr = [[KSMainViewController alloc]init];
+    KSMainToolViewController *toolCtr = [[KSMainToolViewController alloc]init];
+   
+    UINavigationController *aNav = [[UINavigationController alloc]initWithRootViewController:mainCtr];
+    UINavigationController *bNav = [[UINavigationController alloc]initWithRootViewController:toolCtr];
+    [arr addObject:aNav];
+    [arr addObject:bNav];
+    tabBar.viewControllers = arr;
+    
+    self.window.rootViewController = tabBar;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

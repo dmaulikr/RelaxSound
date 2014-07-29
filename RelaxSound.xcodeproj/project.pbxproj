@@ -19,6 +19,8 @@
 		0AE4BEFA1987A50D007DF4D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE4BEE21987A50D007DF4D0 /* UIKit.framework */; };
 		0AE4BF021987A50D007DF4D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AE4BF001987A50D007DF4D0 /* InfoPlist.strings */; };
 		0AE4BF041987A50D007DF4D0 /* RelaxSoundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4BF031987A50D007DF4D0 /* RelaxSoundTests.m */; };
+		0AE4BF131987A7E1007DF4D0 /* KSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4BF121987A7E1007DF4D0 /* KSMainViewController.m */; };
+		0AE4BF161987AC3D007DF4D0 /* KSMainToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4BF151987AC3D007DF4D0 /* KSMainToolViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		0AE4BEFF1987A50D007DF4D0 /* RelaxSoundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RelaxSoundTests-Info.plist"; sourceTree = "<group>"; };
 		0AE4BF011987A50D007DF4D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AE4BF031987A50D007DF4D0 /* RelaxSoundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelaxSoundTests.m; sourceTree = "<group>"; };
+		0AE4BF111987A7E1007DF4D0 /* KSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMainViewController.h; sourceTree = "<group>"; };
+		0AE4BF121987A7E1007DF4D0 /* KSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMainViewController.m; sourceTree = "<group>"; };
+		0AE4BF141987AC3D007DF4D0 /* KSMainToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMainToolViewController.h; sourceTree = "<group>"; };
+		0AE4BF151987AC3D007DF4D0 /* KSMainToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMainToolViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		0AE4BEE41987A50D007DF4D0 /* RelaxSound */ = {
 			isa = PBXGroup;
 			children = (
+				0AE4BF0D1987A7C3007DF4D0 /* main */,
 				0AE4BEED1987A50D007DF4D0 /* KSAppDelegate.h */,
 				0AE4BEEE1987A50D007DF4D0 /* KSAppDelegate.m */,
 				0AE4BEF01987A50D007DF4D0 /* Images.xcassets */,
@@ -142,6 +149,41 @@
 				0AE4BF001987A50D007DF4D0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AE4BF0D1987A7C3007DF4D0 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				0AE4BF0E1987A7C3007DF4D0 /* controller */,
+				0AE4BF0F1987A7C3007DF4D0 /* model */,
+				0AE4BF101987A7C3007DF4D0 /* view */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		0AE4BF0E1987A7C3007DF4D0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0AE4BF111987A7E1007DF4D0 /* KSMainViewController.h */,
+				0AE4BF121987A7E1007DF4D0 /* KSMainViewController.m */,
+				0AE4BF141987AC3D007DF4D0 /* KSMainToolViewController.h */,
+				0AE4BF151987AC3D007DF4D0 /* KSMainToolViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		0AE4BF0F1987A7C3007DF4D0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0AE4BF101987A7C3007DF4D0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE4BEEF1987A50D007DF4D0 /* KSAppDelegate.m in Sources */,
+				0AE4BF161987AC3D007DF4D0 /* KSMainToolViewController.m in Sources */,
 				0AE4BEEB1987A50D007DF4D0 /* main.m in Sources */,
+				0AE4BF131987A7E1007DF4D0 /* KSMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +484,7 @@
 				0AE4BF091987A50D007DF4D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AE4BF0A1987A50D007DF4D0 /* Build configuration list for PBXNativeTarget "RelaxSoundTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +493,7 @@
 				0AE4BF0C1987A50D007DF4D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
