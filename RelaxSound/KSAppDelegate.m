@@ -2,7 +2,7 @@
 //  KSAppDelegate.m
 //  RelaxSound
 //
-//  Created by kevin on 14-7-29.
+//  Created by kevin San on 14-7-29.
 //  Copyright (c) 2014年 com.kevin. All rights reserved.
 //
 
