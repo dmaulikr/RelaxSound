@@ -7,6 +7,7 @@
 //
 
 #import "KSMainToolViewController.h"
+#import "KSMainViewController.h"
 
 @interface KSMainToolViewController ()
 
@@ -27,6 +28,10 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
+//    UIButton *btm = [[UIButton alloc]initWithFrame:CGRectMake(30, 30, 80, 80)];
+//    btm.backgroundColor = [UIColor blackColor];
+//    [btm addTarget:self action:@selector(goto) forControlEvents:UIControlEventTouchDown];
+//    [self.view addSubview:btm];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,6 +40,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)goto
+{
+    KSMainToolViewController *ctr = [[KSMainToolViewController alloc]init];
+    [self.navigationController pushViewController:ctr animated:YES];
+    
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+
+}
 /*
 #pragma mark - Navigation
 

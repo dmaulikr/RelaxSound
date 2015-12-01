@@ -9,6 +9,9 @@
 #import "KSAppDelegate.h"
 #import "KSMainViewController.h"
 #import "KSMainToolViewController.h"
+#import "KSToolSonViewController.h"
+#import "KSPostNoticeViewController.h"
+#import "KSGoViewController.h"
 
 @implementation KSAppDelegate
 
@@ -20,13 +23,20 @@
     
     UITabBarController *tabBar = [[UITabBarController alloc]init];
     
-    KSMainViewController *mainCtr = [[KSMainViewController alloc]init];
-    KSMainToolViewController *toolCtr = [[KSMainToolViewController alloc]init];
-   
+    KSGoViewController *mainCtr = [[KSGoViewController alloc]init];
+   // KSMainToolViewController *toolCtr = [[KSMainToolViewController alloc]init];
+    KSToolSonViewController *sonCtr = [[KSToolSonViewController alloc] init];
+    KSPostNoticeViewController *four = [[KSPostNoticeViewController alloc]init];
+    
     UINavigationController *aNav = [[UINavigationController alloc]initWithRootViewController:mainCtr];
-    UINavigationController *bNav = [[UINavigationController alloc]initWithRootViewController:toolCtr];
+//    UINavigationController *bNav = [[UINavigationController alloc]initWithRootViewController:toolCtr];
+    UINavigationController *sonNav = [[UINavigationController alloc]initWithRootViewController:sonCtr];
+    UINavigationController *fourNav = [[UINavigationController alloc]initWithRootViewController:four];
+
     [arr addObject:aNav];
-    [arr addObject:bNav];
+//    [arr addObject:bNav];
+    [arr addObject:sonNav];
+    [arr addObject:fourNav];
     tabBar.viewControllers = arr;
     
     self.window.rootViewController = tabBar;

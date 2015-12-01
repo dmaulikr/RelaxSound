@@ -27,6 +27,20 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
+}
+
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:YES];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
+//
+//    
+//}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning

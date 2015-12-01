@@ -12,7 +12,7 @@
 		0AE4BEE31987A50D007DF4D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE4BEE21987A50D007DF4D0 /* UIKit.framework */; };
 		0AE4BEE91987A50D007DF4D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AE4BEE71987A50D007DF4D0 /* InfoPlist.strings */; };
 		0AE4BEEB1987A50D007DF4D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4BEEA1987A50D007DF4D0 /* main.m */; };
-		0AE4BEEF1987A50D007DF4D0 /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4BEEE1987A50D007DF4D0 /* KSAppDelegate.m */; };
+		0AE4BEEF1987A50D007DF4D0 /* RelaxSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4BEEE1987A50D007DF4D0 /* RelaxSound.m */; };
 		0AE4BEF11987A50D007DF4D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE4BEF01987A50D007DF4D0 /* Images.xcassets */; };
 		0AE4BEF81987A50D007DF4D0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE4BEF71987A50D007DF4D0 /* XCTest.framework */; };
 		0AE4BEF91987A50D007DF4D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE4BEDE1987A50D007DF4D0 /* Foundation.framework */; };
@@ -21,6 +21,9 @@
 		0AE4BF041987A50D007DF4D0 /* RelaxSoundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4BF031987A50D007DF4D0 /* RelaxSoundTests.m */; };
 		0AE4BF131987A7E1007DF4D0 /* KSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4BF121987A7E1007DF4D0 /* KSMainViewController.m */; };
 		0AE4BF161987AC3D007DF4D0 /* KSMainToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4BF151987AC3D007DF4D0 /* KSMainToolViewController.m */; };
+		279984911AE8FEBA000B19FD /* KSToolSonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279984901AE8FEBA000B19FD /* KSToolSonViewController.m */; };
+		279984941AE8FEF9000B19FD /* KSPostNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279984931AE8FEF9000B19FD /* KSPostNoticeViewController.m */; };
+		279984981AE9053A000B19FD /* KSGoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279984971AE9053A000B19FD /* KSGoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +45,8 @@
 		0AE4BEE81987A50D007DF4D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AE4BEEA1987A50D007DF4D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AE4BEEC1987A50D007DF4D0 /* RelaxSound-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RelaxSound-Prefix.pch"; sourceTree = "<group>"; };
-		0AE4BEED1987A50D007DF4D0 /* KSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAppDelegate.h; sourceTree = "<group>"; };
-		0AE4BEEE1987A50D007DF4D0 /* KSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSAppDelegate.m; sourceTree = "<group>"; };
+		0AE4BEED1987A50D007DF4D0 /* RelaxSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelaxSound.h; sourceTree = "<group>"; };
+		0AE4BEEE1987A50D007DF4D0 /* RelaxSound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelaxSound.m; sourceTree = "<group>"; };
 		0AE4BEF01987A50D007DF4D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0AE4BEF61987A50D007DF4D0 /* RelaxSoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxSoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE4BEF71987A50D007DF4D0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,6 +57,12 @@
 		0AE4BF121987A7E1007DF4D0 /* KSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMainViewController.m; sourceTree = "<group>"; };
 		0AE4BF141987AC3D007DF4D0 /* KSMainToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMainToolViewController.h; sourceTree = "<group>"; };
 		0AE4BF151987AC3D007DF4D0 /* KSMainToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMainToolViewController.m; sourceTree = "<group>"; };
+		2799848F1AE8FEBA000B19FD /* KSToolSonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSToolSonViewController.h; sourceTree = "<group>"; };
+		279984901AE8FEBA000B19FD /* KSToolSonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSToolSonViewController.m; sourceTree = "<group>"; };
+		279984921AE8FEF9000B19FD /* KSPostNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPostNoticeViewController.h; sourceTree = "<group>"; };
+		279984931AE8FEF9000B19FD /* KSPostNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPostNoticeViewController.m; sourceTree = "<group>"; };
+		279984961AE9053A000B19FD /* KSGoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSGoViewController.h; sourceTree = "<group>"; };
+		279984971AE9053A000B19FD /* KSGoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				0AE4BF0D1987A7C3007DF4D0 /* main */,
-				0AE4BEED1987A50D007DF4D0 /* KSAppDelegate.h */,
-				0AE4BEEE1987A50D007DF4D0 /* KSAppDelegate.m */,
+				0AE4BEED1987A50D007DF4D0 /* RelaxSound.h */,
+				0AE4BEEE1987A50D007DF4D0 /* RelaxSound.m */,
 				0AE4BEF01987A50D007DF4D0 /* Images.xcassets */,
 				0AE4BEE51987A50D007DF4D0 /* Supporting Files */,
 			);
@@ -168,6 +177,12 @@
 				0AE4BF121987A7E1007DF4D0 /* KSMainViewController.m */,
 				0AE4BF141987AC3D007DF4D0 /* KSMainToolViewController.h */,
 				0AE4BF151987AC3D007DF4D0 /* KSMainToolViewController.m */,
+				2799848F1AE8FEBA000B19FD /* KSToolSonViewController.h */,
+				279984901AE8FEBA000B19FD /* KSToolSonViewController.m */,
+				279984921AE8FEF9000B19FD /* KSPostNoticeViewController.h */,
+				279984931AE8FEF9000B19FD /* KSPostNoticeViewController.m */,
+				279984961AE9053A000B19FD /* KSGoViewController.h */,
+				279984971AE9053A000B19FD /* KSGoViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -234,6 +249,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = com.kevin;
 				TargetAttributes = {
+					0AE4BEDA1987A50D007DF4D0 = {
+						DevelopmentTeam = R548YE2S4R;
+					};
 					0AE4BEF51987A50D007DF4D0 = {
 						TestTargetID = 0AE4BEDA1987A50D007DF4D0;
 					};
@@ -282,7 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AE4BEEF1987A50D007DF4D0 /* KSAppDelegate.m in Sources */,
+				279984941AE8FEF9000B19FD /* KSPostNoticeViewController.m in Sources */,
+				279984911AE8FEBA000B19FD /* KSToolSonViewController.m in Sources */,
+				279984981AE9053A000B19FD /* KSGoViewController.m in Sources */,
+				0AE4BEEF1987A50D007DF4D0 /* RelaxSound.m in Sources */,
 				0AE4BF161987AC3D007DF4D0 /* KSMainToolViewController.m in Sources */,
 				0AE4BEEB1987A50D007DF4D0 /* main.m in Sources */,
 				0AE4BF131987A7E1007DF4D0 /* KSMainViewController.m in Sources */,
@@ -404,10 +425,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RelaxSound/RelaxSound-Prefix.pch";
 				INFOPLIST_FILE = "RelaxSound/RelaxSound-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -417,10 +441,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RelaxSound/RelaxSound-Prefix.pch";
 				INFOPLIST_FILE = "RelaxSound/RelaxSound-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
